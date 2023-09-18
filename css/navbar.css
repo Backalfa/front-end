@@ -1,0 +1,68 @@
+.navbar-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar a{
+    padding: 20px;
+    font-size: 16px;
+    color: #5C656A;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #8D57CF;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a.navbar_active {
+    border-bottom: 2px solid #8D57CF;
+    color: #fff;
+}
+
+
+/* PESQUISA */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .search-bar_input {
+    height: 40px;
+    background-color: #353334;
+    border: none;
+    padding: 0 52px;
+    color: #fff;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3e%3cpath d='M508.9 478.7L360 330a201.6 201.6 0 0045.2-127.3C405.3 90.9 314.4 0 202.7 0S0 91 0 202.7s91 202.6 202.7 202.6c48.2 0 92.4-17 127.3-45.2L478.7 509c4.2 4.1 11 4.1 15 0l15.2-15.1c4.1-4.2 4.1-11 0-15zm-306.2-116c-88.3 0-160-71.8-160-160s71.7-160 160-160 160 71.7 160 160-71.8 160-160 160z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%235C5D71'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 25px 50%;
+    border-radius: 5px;
+}
+
+.search-bar input::placeholder {
+    color: #5C656A;
+}
+
+/* ICON ROXO */
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #8D57CF;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pages - Card Produt 0.2 - Miguel Sá</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Main Css -->
+        <link rel="stylesheet" href="../css/main.css" />
+
+        <!-- Nav Bar -->
+        <link rel="stylesheet" href="../css/navbar.css" />
+        
+        <!-- Stars -->
+        <link rel="stylesheet" href="../css/stars.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Carrousel -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    </head>
+    <body>
+        <!-- Nav Bar -->
+        <div class="navbar-container">
+            <nav class="navbar navbar-left search-bar">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M508.9 478.7L360 330a201.6 201.6 0 0045.2-127.3C405.3 90.9 314.4 0 202.7 0S0 91 0 202.7s91 202.6 202.7 202.6c48.2 0 92.4-17 127.3-45.2L478.7 509c4.2 4.1 11 4.1 15 0l15.2-15.1c4.1-4.2 4.1-11 0-15zm-306.2-116c-88.3 0-160-71.8-160-160s71.7-160 160-160 160 71.7 160 160-71.8 160-160 160z" data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%235C5D71'/>
+                </svg>
+                <input type="text" placeholder="Search..." class="search-bar_input">
+                <a href="#"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></a>
+                <div class="icon-container"><a href="#"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span class="badge">12</span></a></div>
+            </nav>
+            <nav class="navbar navbar-right">
+                <a href="#" class="navbar_active">Home</a>
+                <a href="#">Payment</a>
+                <a href="#">Delivery</a>
+                <a href="#">Catalogue</a>
+                <a href="#">About</a>
+                <div class="icon-container"><a href="#"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span class="badge">4</span></a></div>
+            </nav>
+        </div>
+
+
+        <div class="row">
+            <div class="col-4">
+                <div class="row offensive">
+                    <div class="col-4">
+                        <img src="../imgs/perfil.png" alt="imagem de perfil" class="perfil_img">
+                    </div>
+                    <div class="offensive_text col-4">
+                        <h3><strong>Offensive</strong></h3>
+                        <span><strong>Lorem ipsum Dolor</strong></span>
+                    </div>
+                    <div class="col-4">
+                        <img src="../imgs/sound.png" alt="sound" style="height: 50px; width: auto;" class="sound_perfil">
+                    </div>
+                </div>
+                <div class="headphones bar_1">
+
+                    <div class="Switch Round">
+                        <div class="Toggle"></div>
+                    </div>
+
+                    <div class="name_page">
+                        <h1>Headphones</h1>
+                        <h2>Best Gaming <span>Sound</span></h2>
+                        <hr class="name_page_hr">
+                    </div>
+
+                    <div class="row button_page">
+                        <div class="col-3"><button class="button_page_icon" id="profile">Profile</button></div>
+                        <div class="col-3"><button class="button_page_icon" id="search">Search</button></div>
+                        <div class="col-3"><button class="button_page_icon" id="friends">Friends</button></div>
+                        <div class="col-3"><h1 class="preco"><span>$</span> 350</h1></div>
+                    </div>
+
+                    <div id="half-stars-example">
+                        <div class="rating-group">
+                            <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                            <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                            <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                            <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                            <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                            <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                            <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                            <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                            <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                            <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                            <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                            <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                        </div>
+                    </div>
+
+                    <div class="order">
+                        <button class="order_button_now">Order Now <i class="fa fa-shopping-bag"></i></button>
+                        <button class="order_button_spoiler">Spoiler <i class="fa fa-star"></i></button>
+                    </div>
+                    
+                    <div class="carousel">
+                        <div class="carousel-item"><div class="overlay"></div><img src="../imgs/headphones/branco.png" alt="Imagem 1" class="carrousel_img"></div>
+                        <div class="carousel-item"><div class="overlay"></div><img src="../imgs/headphones/azul.png" alt="Imagem 2" class="carrousel_img"></div>
+                        <div class="carousel-item"><div class="overlay"></div><img src="../imgs/headphones/rosa.png" alt="Imagem 3" class="carrousel_img"></div>
+                        <div class="carousel-item"><div class="overlay"></div><img src="../imgs/headphones/azulmarinho.png" alt="Imagem 4" class="carrousel_img"></div>
+                        <div class="carousel-item"><div class="overlay"></div><img src="../imgs/headphones/preto.png" alt="Imagem 4" class="carrousel_img"></div>
+                        <div class="carousel-item"><div class="overlay"></div><img src="../imgs/headphones/roxo.png" alt="Imagem 4" class="carrousel_img"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="fones">
+
+                    <div class="display-container">
+
+                        <!--<img src="../imgs/fones1.png" alt="fones" class="fones_img">-->
+                        <img src="../imgs/headphones/preto.png" alt="fones" class="fones_img">
+
+                        <div class="display-left">
+                            <div class="more_2">
+                                <div class="more_1">
+                                    <div class="more" id="frequencia" data-tooltip="Headphone Frequency Range 20HZ - 20KHZ">
+                                        <i class="fa fa-plus icon_more"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="display-right">
+                            <div class="more_2">
+                                <div class="more_1">
+                                    <div class="more" id="coneccao" data-tooltip="teste">
+                                        <i class="fa fa-plus icon_more"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="display-bottommiddle">
+                            <div class="more_2">
+                                <div class="more_1">
+                                    <div class="more" id="micro" data-tooltip="teste">
+                                        <i class="fa fa-plus icon_more"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-6 bar_3">
+
+                        <div class="vertical-carousel">
+                            <div class="carousel-item"><div class="overlay_vertical"></div><img src="../imgs/headphones/branco.png" alt="Imagem 1" class="carrousel_img"></div>
+                            <div class="carousel-item"><div class="overlay_vertical"></div><img src="../imgs/headphones/azul.png" alt="Imagem 2" class="carrousel_img"></div>
+                            <div class="carousel-item"><div class="overlay_vertical"></div><img src="../imgs/headphones/rosa.png" alt="Imagem 3" class="carrousel_img"></div>
+                            <div class="carousel-item"><div class="overlay_vertical"></div><img src="../imgs/headphones/azulmarinho.png" alt="Imagem 4" class="carrousel_img"></div>
+                            <div class="carousel-item"><div class="overlay_vertical"></div><img src="../imgs/headphones/preto.png" alt="Imagem 4" class="carrousel_img"></div>
+                            <div class="carousel-item"><div class="overlay_vertical"></div><img src="../imgs/headphones/roxo.png" alt="Imagem 4" class="carrousel_img"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 bar_3">
+                        teste
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/switch.js"></script>
+        <script  src="../js/carrousel.js"></script>
+        <script src="../js/tooltips.js"></script>
+    </body>
+</html>
